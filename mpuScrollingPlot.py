@@ -31,6 +31,7 @@ graphic_window = pg.GraphicsWindow()
 pause = False
 k = 1
 
+
 def click_handle():
     global pause
     pause = not pause
@@ -39,8 +40,10 @@ def click_handle():
     else:
         QtGui.QLineEdit.setText(text, 'running...')
 
+
 def quit_handle():
     main_window.close()
+
 
 def save_handle():
     """
@@ -75,6 +78,7 @@ as 'np' and 'pg'.
 
 Go, play.
 """
+
 
 def configure_layout():
     global layout_child_window, layout_main_window
